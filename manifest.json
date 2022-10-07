@@ -1,0 +1,11 @@
+{
+    "name": "zendesk ticket creation",
+    "version": "v1.0",
+    "description": "allow user to create zendesk ticket from extension",
+    "manifest version": 1,
+    "author": "Arun Sunderraj",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Ticket Creator Form"
+    }
+}
