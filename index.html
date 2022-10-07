@@ -1,13 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-</head>
-<body>
-  <h1>
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="hero is-link">
+        <div class="hero-body">
+            <p class="title" style="text-align: center;">
+                ZD Ticket Creation
+            </p>
+        </div>
+    </section>
+    <section class="section is-medium">
+        <div class="field">
+            <label class="label">Subject</label>
+            <div class="control">
+                <input class="input" type="text" placeholder="Enter the subject line">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Body</label>
+            <div class="control">
+                <textarea class="textarea" placeholder="Textarea"></textarea>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">Pipeline No.</div>
+            <div class="control">
+                <input class="input" type="text" placeholder="Pipe. No.">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">Integration ID</div>
+            <div class="control">
+                <input class="input" type="text" placeholder="Integration No.">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">Team ID</div>
+            <div class="control">
+                <input class="input" type="text" placeholder="Team No.">
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">Source</div>
+            <div class="control">
+                <div class="select is-fullwidth">
+                    <select>
+                        <option>--</option>
+                        <option>MySQL</option>
+                        <option>Postgres</option>
+                        <option>MongoDB</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="field">
+            <div class="label">Cluster ID</div>
+            <div class="control">
+                <div class="select is-fullwidth">
+                    <select>
+                        <option>--</option>
+                        <option>US</option>
+                        <option>US2</option>
+                        <option>EU</option>
+                        <option>ASIA</option>
+                        <option>AU</option>
+                        <option>On-Premise</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-link" type="submit" value="submit">Submit</button>
+            </div>
+            <div class="control">
+                <button class="button is-warning" type="submit" value="reset">Reset</button>
+            </div>
+        </div>
+    </section>
+  </body>
 </html>
