@@ -15,5 +15,8 @@
             "js":["background.js"]
         }
     ],
-    "permissions":["activeTab"]
+    "permissions":["activeTab"],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css;"    
+    }
 }
