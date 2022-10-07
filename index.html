@@ -16,6 +16,7 @@
         </div>
     </section>
     <section class="section is-medium">
+    <form id="newForm">
         <div class="field">
             <label class="label">Subject</label>
             <div class="control">
@@ -84,6 +85,12 @@
                 <button class="button is-warning" type="submit" value="reset">Reset</button>
             </div>
         </div>
+    </form>
     </section>
+    <script nonce="2726c7f26c">
+        function newFunction() {
+           document.getElementById("newForm").reset();
+        }
+     </script>
   </body>
 </html>
